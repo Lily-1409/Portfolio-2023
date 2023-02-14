@@ -1,0 +1,14 @@
+.headerWrapper {
+    background-color: var(--orange);
+}
+
+.headerContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 16px 40px;
+}

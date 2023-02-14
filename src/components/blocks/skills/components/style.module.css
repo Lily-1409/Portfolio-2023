@@ -1,0 +1,14 @@
+
+.skillsItem {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skillsName {
+    font-family: var(--main-fonts);
+    font-size: 24px;
+    color: var(--gray);
+    margin-bottom: 50px;
+    text-align: center;
+}

@@ -1,0 +1,31 @@
+.skillsWrapper {
+    border-top: 1px solid #fff;
+    background-color: #eae7dc;
+}
+
+.skillsContent {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 50px 40px;
+}
+
+.title {
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-fonts);
+    font-size: 48px;
+    color: var(--gray);
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.skillsList {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}

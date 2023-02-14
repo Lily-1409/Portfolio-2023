@@ -1,0 +1,19 @@
+@import './reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+:root {
+	/* Colors */
+	--black: #000000;
+	--white: #ffffff;
+	--red: #cf1b1b;
+	--orange: #f7c592;
+	--gray: #393f5b;
+    /*Fonts*/
+    --main-fonts: 'Roboto Condensed';
+}
+
+html,
+body {
+	min-height: 100vh;
+	font-family: 'Roboto Condensed', Arial, sans-serif;
+}

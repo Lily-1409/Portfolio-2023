@@ -1,0 +1,11 @@
+.contactItemIcon {
+    fill: #000000;
+}
+
+.contactItemIcon:hover {
+    opacity: 0.5;
+}
+
+.contactItemIcon:active {
+    opacity: 0.3;
+}

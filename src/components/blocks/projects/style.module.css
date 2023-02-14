@@ -1,0 +1,21 @@
+.projectsWrapper {
+    border-top: 1px solid #fff;
+    background-color: #eae7dc;
+}
+
+.projectsContent {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 50px 40px;
+}
+
+.title {
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-fonts);
+    font-size: 48px;
+    color: var(--gray);
+    margin-bottom: 50px;
+    text-align: center;
+}

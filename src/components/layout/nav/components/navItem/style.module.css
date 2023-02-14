@@ -1,0 +1,17 @@
+.link {
+    text-decoration: none;
+    color: var(--gray);
+    outline: none;
+
+    font-family: var(--main-fonts);
+    font-size: 22px;
+}
+
+.link:focus,
+.link:hover {
+    border-bottom: 1px solid var(--red);
+}
+
+.link:active {
+    opacity: 0.5;
+}
