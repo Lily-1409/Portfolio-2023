@@ -1,0 +1,26 @@
+.searchWrapper {
+    background-color: #F4F1F7;
+    padding: 0 30px;
+}
+
+.searchContent {
+    background-color: var(--white);
+    padding: 40px 0;
+}
+
+.searchTitle {
+    margin: 0 0 30px;
+    padding: 0;
+    position: relative;
+
+    font-size: var(--fs-title-desktop);
+    font-weight: 700;
+    color: var(--color-ebony);
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .searchTitle {
+        font-size: var(--fs-subtitle-mobile);
+    }
+}

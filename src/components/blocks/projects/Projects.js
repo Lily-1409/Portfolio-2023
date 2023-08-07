@@ -5,10 +5,11 @@ import Project from "./components/Project";
 
 function Projects () {
     return (
-        <div className={s.projectsWrapper}>
+        <div className={s.projectsWrapper} id="projects">
             <div className={s.projectsContent}>
-                <h2 className={s.title}>Проекты</h2>
-                <ul>
+                <h2 className={s.projectsTitle}>Проекты</h2>
+                <p className={s.projectsCaption}>Здесь можно посмотреть мои проекты</p>
+                <ul className={s.projectsList}>
                     {projects.map((item) => {
                         return(
                             <Project  image={item.cover} 
@@ -18,7 +19,9 @@ function Projects () {
                                       GitHub={item.GitHub}
                                       LiveSite={item.LiveSite}
                                       alt={item.alt}
-                                      target={item.target} />
+                                      target={item.target}
+                                      technology={item.technology}
+                                      key={item.id} />
                             )
                         })
                     }

@@ -1,21 +1,21 @@
 import s from "./style.module.css";
 
-import image from "assets/frontend_3.jpg";
+import desktopImage from "assets/desktopImage.png";
 
 function About () {
     return (
-        <div className={s.aboutWrapper}>
+        <div className={s.aboutWrapper} id="about">
             <div className={s.aboutContent}>
-                <div className={s.mainImageWrapper}>
-                    <img className={s.mainImage} src={image} alt="avatar2" width="516" height="450"/>
+                <div className={s.aboutImageWrapper}>
+                    <img className={s.aboutImage} src={desktopImage} alt="avatar2" width="516" height="450"/>
                 </div>
-                <div className={s.description}>
-                    <h2 className={s.title}>Обо мне</h2>
-                    <p className={s.description}>Люблю создавать что-то новое и видеть результат своей работы, поэтому, выбрала для себя направление IT, а именно Frontend-разработку)</p>
-                    <p className={s.description}>Мой путь в качестве it-специалиста начался в 2021 году, у меня мало опыта, но я стремлюсь учиться и решать поставленные передо мной задачи!</p>
-                    <p className={s.description}>Здесь можно посмотреть результаты моей работы: <a href="https://github.com/Lily-1409">https://github.com/Lily-1409</a>.</p>
-                    <p className={s.description}>В данный момент я продолжаю своё обучение и сконцентрирована на JavaScript и ES6.</p>
-                    <p className={s.description}>В свободное время я посещаю бассейн и провожу время с семьей и друзьями.</p>
+                <div className={s.aboutDescriptionWrapper}>
+                    <h2 className={s.aboutTitle}>Обо мне</h2>
+                    <p className={s.aboutDescription}>Люблю создавать что-то новое и видеть результат своей работы, поэтому, выбрала для себя направление IT, а именно Frontend-разработку)</p>
+                    <p className={s.aboutDescription}>Мой путь в качестве it-специалиста начался в 2021 году, у меня мало опыта, но я стремлюсь учиться и решать поставленные передо мной задачи!</p>
+                    <p className={s.aboutDescription}>Здесь можно посмотреть результаты моей работы: <a className={s.aboutLink} href="https://github.com/Lily-1409">https://github.com/Lily-1409</a>.</p>
+                    <p className={s.aboutDescription}>В данный момент я продолжаю своё обучение и сконцентрирована на JavaScript и ES6.</p>
+                    <a className={s.aboutResume} href="Resume.pdf" target="_blank" rel="noreferrer">Мое резюме</a>
                 </div>
             </div>
        </div>

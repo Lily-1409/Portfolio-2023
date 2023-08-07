@@ -1,19 +1,45 @@
 @import './reset.css';
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+@font-face {
+    font-family: 'Manrope';
+    src: url('assets/fonts/Manrope-VariableFont_wght.ttf') format('truetype-variations'),
+         url('assets/fonts/Manrope-Regular.ttf') format('truetype-variations');
+    font-weight: 200 800;
+    font-display: swap;
+  }
 
 :root {
 	/* Colors */
 	--black: #000000;
 	--white: #ffffff;
-	--red: #cf1b1b;
-	--orange: #f7c592;
-	--gray: #393f5b;
+	--color-blue-charcoal: #212529;
+	--color-ebony: #282c34;
+	--color-turquoise-blue: #61dafb;
+	--color-raven: #6c757d;
+	--color-shuttle-grey: #5a6570;
+	--color-bunker: #1f232a;
     /*Fonts*/
-    --main-fonts: 'Roboto Condensed';
+    --main-fonts: 'Manrope';
+
+    /*Font-size*/
+    --fs-main-desktop: 16px;
+    --fs-subtitle-desktop: 22px;
+    --fs-title-desktop: 32px;
+    --fs-bigtitle-desktop: 48px;
+
+    --fs-main-mobile: 14px;
+    --fs-subtitle-mobile: 18px;
+    --fs-title-mobile: 28px;
+    --fs-bigtitle-mobile: 22px;
+
+    /*Viewports*/
+	--mobile-width: 320px;
+	--tablet-width: 767px;
 }
 
 html,
 body {
 	min-height: 100vh;
-	font-family: 'Roboto Condensed', Arial, sans-serif;
+	font-family: 'Manrope', Arial, sans-serif;
+    font-size: 16px;
+	line-height: 1.3;
 }

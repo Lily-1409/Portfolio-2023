@@ -1,27 +1,27 @@
 const navList = [
     {
         id: "01",
-        link: "link_1",
+        link: "intro",
         title: "Главная",
-        target: "_blank",
+        // target: "_blank",
     }, 
     {
         id: "02",
-        link: "link_2",
+        link: "about",
         title: "Обо мне",
-        target: "_blank",
+        // target: "_blank",
     },
     {
         id: "03",
-        link: "link_4",
+        link: "skills",
         title: "Технические навыки",
-        target: "_blank",
+        // target: "_blank",
     },
     {
         id: "04",
-        link: "link_4",
+        link: "projects",
         title: "Проекты",
-        target: "_blank",
+        // target: "_blank",
     },
     {
         id: "05",

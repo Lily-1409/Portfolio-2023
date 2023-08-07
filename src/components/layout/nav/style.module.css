@@ -1,13 +1,25 @@
-.nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.list {
+.navList {
     list-style-type: none;
     margin: 0;
 
     display: flex;
-    gap: 20px;
+}
+
+@media (max-width: 767px) {
+    .navList {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 20px;
+        background-color: var(--color-blue-charcoal);
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-end;
+        z-index: 10;
+    }
+
+    .visible {
+        display: flex;
+    }
 }

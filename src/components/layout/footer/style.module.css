@@ -1,14 +1,36 @@
 .footerWrapper {
-    background-color: var(--orange);
+    padding: 50px 0 20px;
+
+    background-color: #F4F1F7;
 }
 
 .footerContent {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    margin: 0 auto;
+    padding: 16px 40px;
 
     width: 100%;
     max-width: 1300px;
+
+    display: flex;
+    align-items: center;
+}
+
+.footerCopyright {
     margin: 0 auto;
-    padding: 16px 40px;
+}
+
+.footerCopyrightName {
+    color: var(--color-turquoise-blue);
+    font-weight: 700;
+}
+
+@media (max-width: 767px) {
+    .footerCopyright {
+        font-size: var(--fs-main-mobile);
+    }
+
+    .footerCopyrightName {
+        font-size: var(--fs-main-mobile);
+    }
+    
 }

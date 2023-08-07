@@ -12,6 +12,7 @@ const projects = [
         GitHub: "https://github.com/Lily-1409/1031015-device-32",
         LiveSite: "https://lily-1409.github.io/1031015-device-32/",
         target: "_blank",
+        technology: "HTML / CSS",
     },
     // {
     //     id: "02",
@@ -42,6 +43,7 @@ const projects = [
         GitHub: "https://github.com/Lily-1409/DrinkToGo",
         LiveSite: "https://lily-1409.github.io/1031015-device-32/",
         target: "_blank",
+        technology: "HTML / CSS / JavaScript",
     },
     {
         id: "05",
@@ -52,6 +54,7 @@ const projects = [
         GitHub: "https://github.com/Lily-1409/SmartDevice",
         LiveSite: "https://lily-1409.github.io/1031015-device-32/",
         target: "_blank",
+        technology: "HTML / CSS",
     },
     {
         id: "06",
@@ -62,6 +65,7 @@ const projects = [
         GitHub: "https://github.com/Lily-1409/Antarctica",
         LiveSite: "https://lily-1409.github.io/1031015-device-32/",
         target: "_blank",
+        technology: "HTML / CSS / JavaScript",
     },
     {
         id: "07",
@@ -72,6 +76,7 @@ const projects = [
         GitHub: "https://github.com/Lily-1409/Fitness",
         LiveSite: "https://lily-1409.github.io/1031015-device-32/",
         target: "_blank",
+        technology: "HTML / CSS / JavaScript",
     },
 ]
 

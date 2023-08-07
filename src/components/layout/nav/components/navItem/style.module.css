@@ -1,17 +1,28 @@
-.link {
-    text-decoration: none;
-    color: var(--gray);
-    outline: none;
-
-    font-family: var(--main-fonts);
-    font-size: 22px;
+.navItem:not(:last-child) {
+    margin: 0 20px 0 0;
 }
 
-.link:focus,
-.link:hover {
+.navLink {
+    text-decoration: none;
+    color: var(--white);
+    outline: none;
+}
+
+.navLink:focus,
+.navLink:hover {
     border-bottom: 1px solid var(--red);
 }
 
-.link:active {
+.navLink:active {
     opacity: 0.5;
+}
+
+@media (max-width: 767px) {
+    .navItem:not(:last-child) {
+        margin: 0 0 10px;
+    }
+
+    .navLink {
+        font-size: var(--fs-main-mobile);
+    }
 }

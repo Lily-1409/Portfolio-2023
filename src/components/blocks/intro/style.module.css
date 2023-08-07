@@ -1,0 +1,148 @@
+.introWrapper {
+    background-color: var(--color-ebony);
+}
+
+.introContent {
+    margin: 0 auto;
+    padding: 100px 40px;
+
+    width: 100%;
+    max-width: 1300px;
+    min-height: 550px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.introDescriptionWrapper {
+    margin: 0 50px 0 0;
+    padding: 30px;
+    align-self: center;
+}
+
+.introTitle {
+    margin: 0 0 10px;
+    padding: 0;
+
+    font-size: var(--fs-bigtitle-desktop);
+    font-weight: 700;
+    color: var(--color-turquoise-blue);
+}
+
+.introName {
+    display: block;
+}
+
+.introCaption {
+    margin: 0 0 20px;
+    padding: 0;
+
+    font-size: var(--fs-subtitle-desktop);
+    color: var(--color-raven);
+}
+
+.introConnect {
+    margin: 10px;
+    padding: 8px 28px;
+
+    display: inline-block;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: var(--fs-main-desktop);
+    color: var(--color-ebony);
+    background-color: var(--color-turquoise-blue);
+    border-radius: 3px;
+
+    will-change: transform;
+    transition: all 0.5s ease-in-out;
+}
+
+.introConnect:hover,
+.introConnect:focus {
+    background-color: #48C1E2;
+    transform: scale(1.15);
+}
+
+.introImageWrapper {
+    position: relative;
+    z-index: 1;
+    width: 40%;
+    display: flex;
+}
+
+.introImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
+    animation: animate 5s infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: translate(0, 10%);
+    }
+    50% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(0, 10%);
+    }
+  }
+
+@media (max-width: 1199px) {
+    .introContent {
+        padding: 80px 40px;
+        max-width: 1199px;
+        /* gap: 25px; */
+    }
+    
+    .introDescriptionWrapper {
+        margin: 0 50px 0 0;
+        padding: 15px;
+    }
+    
+    .introTitle {
+        font-size: var(--fs-title-desktop);
+        margin: 0 0 25px;
+    }
+    
+    .introCaptionContainer {
+        margin: 0 0 50px;
+    }
+    
+    .introCaptionItem {
+        margin: 0 5px 0 0;
+    }
+
+    .introImage {
+       max-width: 100%;
+       height: auto; 
+    }
+}
+
+@media (max-width: 767px) {
+    .introContent {
+        padding: 80px 40px 60px;
+        min-height: auto;
+    }
+
+    .introDescriptionWrapper {
+        margin-right: 0;
+        z-index: 100;
+    }
+    
+    .introTitle {
+        font-size: var(--fs-bigtitle-mobile);
+    }
+
+    .introCaption {
+        font-size: var(--fs-main-mobile);
+    }
+
+    .introImageWrapper {
+       display: none;
+     }
+}

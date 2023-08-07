@@ -1,0 +1,15 @@
+.socialItem {
+    margin: 0 20px 0 0;
+}
+
+.socialItemIcon {
+    fill: #61dafb;
+}
+
+.socialItemIcon:hover {
+    opacity: 0.5;
+}
+
+.socialItemIcon:active {
+    opacity: 0.3;
+}

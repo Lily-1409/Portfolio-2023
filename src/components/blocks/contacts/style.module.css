@@ -1,0 +1,118 @@
+.contactsWrapper {
+    border-top: 1px solid #fff;
+    background-color: #F4F1F7;
+}
+
+.contactsContent {
+    margin: 0 auto;
+
+    width: 100%;
+    max-width: 1300px;
+    padding: 50px 40px;
+}
+
+.contactsTitle {
+    margin: 0;
+    padding: 0;
+
+    font-size: var(--fs-title-desktop);
+    font-weight: 700;
+    color: var(--color-turquoise-blue);
+    text-align: center;
+}
+
+.contactsCaption {
+    margin: 0 0 50px;
+    padding: 0 0 20px;
+
+    position: relative;
+
+    font-size: var(--fs-subtitle-desktop);
+    font-weight: 700;
+    color: var(--color-ebony);
+    text-align: center;
+}
+
+.contactsCaption::after {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 2px;
+    background: var(--color-turquoise-blue);
+    top: 100%;
+    left: calc(50% - 30px);
+}
+
+.contactsInfo {
+    margin: 0 auto;
+    padding: 25px;
+    list-style-type: none;
+
+    width: 300px;
+
+    background-color: var(--color-blue-charcoal);
+    border-top: 5px solid var(--color-turquoise-blue);
+    border-bottom: 5px solid var(--color-turquoise-blue);
+}
+
+.contactsInfoItem {
+    margin: 0 0 20px;
+
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    gap: 10px;
+}
+
+.contactsInfoIcon {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    
+    fill: var(--color-turquoise-blue);
+}
+
+.contactsInfoName {
+    margin: 0;
+    padding: 0;
+
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-turquoise-blue);
+}
+
+.contactsInfoDescription {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
+    font-size: var(--fs-main-desktop);
+    font-weight: 700;
+    color: var(--white);
+}
+
+@media (max-width: 767px) {
+
+    .contactsContent {
+        padding: 50px 0;
+    }
+
+    .contactsInfo {
+        width: 100%;
+    }
+
+    .contactsTitle {
+        font-size: var(--fs-title-mobile);
+        margin: 0 0 25px;
+    }
+
+    .contactsCaption {
+        font-size: var(--fs-subtitle-mobile);
+    }
+
+    .contactsInfoName {
+        font-size: var(--fs-subtitle-mobile);
+    }
+
+    .contactsInfoDescription {
+        font-size: var(--fs-main-mobile);
+    }
+}

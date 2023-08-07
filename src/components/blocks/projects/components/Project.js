@@ -1,24 +1,39 @@
+import React from 'react';
+// import { useInView } from 'react-intersection-observer';
 import s from "./style.module.css";
+// import classNames from 'classnames';
 
 function Project (props) {
+    // const [ active, setActive ] = React.useState(false);
+    // const {ref, inView} = useInView({
+    //     threshold: 0.5,
+    //     triggerOnce: true,
+    // })
+    // console.log(inView)
+
+    // React.useEffect(() => {
+    //     if (inView) {
+    //         setActive(true)
+    //     }
+    // }, [inView])
+
     return (
-        <li className={s.projectsItem}>
-            <div className={s.projectsImage}>
-                <img src={props.cover} alt={props.alt} width="570" height="300"/>
+        <li className={s.projectItem} key={props.id} tabIndex="0">
+            <div className={s.projectImage}>
+            {/* <div ref={ref} className={classNames(s.projectImage, active === true && s.projectImageActive)}> */}
+                <img className={`${s.projectImageItem}`} src={props.cover} alt={props.alt} width="570" height="300"/>
             </div>
             <div className={s.projectDescription}>
-                <h3 className={s.projectTitle}>Описание:</h3>
-                <p className={s.projectGoal}> {props.description}</p>
-                <h3 className={s.projectTitle}>Используемые технологии:</h3>
-                <ul className={s.enumeration}>
-                    <li className={s.enumerationItem}>HTML</li>
-                    <li className={s.enumerationItem}>CSS</li>
-                </ul>
-                <h3 className={s.projectTitle}>Посмотреть проект:</h3>
-                <div className={s.enumeration}>
-                    <a className={s.enumerationLink} href={props.GitHub} target={props.target}>GitHub</a>
-                    <a className={s.enumerationLink} href={props.LiveSite}>Live Site</a>
+                <div className={`${s.projectLinkWrapper} ${s.projectLinkWrapperMobile}`}>
+                    <a className={s.projectLink} href={props.GitHub} target={props.target}>
+                        <svg className={s.projectLinkIcon} xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M10.9 2.1c-4.6.5-8.3 4.2-8.8 8.7-.5 4.7 2.2 8.9 6.3 10.5.3.1.6-.1.6-.5v-1.6s-.4.1-.9.1c-1.4 0-2-1.2-2.1-1.9-.1-.4-.3-.7-.6-1-.3-.1-.4-.1-.4-.2 0-.2.3-.2.4-.2.6 0 1.1.7 1.3 1 .5.8 1.1 1 1.4 1 .4 0 .7-.1.9-.2.1-.7.4-1.4 1-1.8-2.3-.5-4-1.8-4-4 0-1.1.5-2.2 1.2-3-.1-.2-.2-.7-.2-1.4 0-.4 0-1 .3-1.6 0 0 1.4 0 2.8 1.3a6.45 6.45 0 0 1 3.9 0C15.3 6 16.8 6 16.8 6c.2.6.2 1.2.2 1.6 0 .8-.1 1.2-.2 1.4.7.8 1.2 1.8 1.2 3 0 2.2-1.7 3.5-4 4 .6.5 1 1.4 1 2.3v2.6c0 .3.3.6.7.5 3.7-1.5 6.3-5.1 6.3-9.3 0-6-5.1-10.7-11.1-10z"/></svg>
+                    </a>
+                    <a className={s.projectLink} href={props.LiveSite}>
+                        <svg className={s.projectLinkIcon} xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 86 78" fill="currentColor"><path d="M23.2 11.5c-1.1 1.4-2.1 3-3 4.6 2.8 1.7 6 3.1 9.4 4.1.1-.6.2-1.2.3-1.7 1.2-5.6 2.8-10.2 4.9-13.7.7-1.2 1.5-2.2 2.3-3.1-1.8.5-3.4 1.2-5.1 2.1-3.3 1.8-6.3 4.4-8.8 7.7zM31.3 22.5c-.7 4.2-1.1 8.9-1.1 13.7h25c0-4.9-.4-9.5-1.1-13.7-3.6.9-7.4 1.3-11.4 1.3-4 .1-7.8-.4-11.4-1.3zM42.3 50.6c4.1 0 8.1.5 11.8 1.4.7-4.2 1.1-8.8 1.1-13.7h-25c0 4.8.4 9.4 1.1 13.6 3.5-.9 7.2-1.3 11-1.3zM15.1 36.3h13.1c.1-5.1.5-9.9 1.2-14.3-2.8-.8-5.5-1.9-7.9-3.1-.7-.4-1.4-.7-2-1.1-2.7 5.3-4.3 11.6-4.4 18.5zM19.3 56.6c3-1.8 6.4-3.2 10-4.2-.7-4.3-1.1-9.1-1.1-14.1H15c.2 6.7 1.7 13 4.3 18.3zM44.9 1.6c-.7-.4-1.5-.6-2.2-.6-.7 0-1.5.2-2.2.6-.8.4-1.5 1.1-2.3 2-1.5 1.7-2.9 4.4-4.1 7.7-1 2.8-1.8 6-2.5 9.5 3.5.9 7.2 1.3 11.1 1.3 3.9 0 7.6-.5 11.1-1.3-.1-.6-.2-1.2-.4-1.8-1.1-5.4-2.7-9.9-4.6-13-1.2-2.2-2.6-3.7-3.9-4.4zM31.9 55.7c1.1 5.4 2.7 9.9 4.6 13 1.3 2.1 2.6 3.5 3.9 4.3.8.4 1.5.6 2.2.6.7 0 1.5-.2 2.2-.6.8-.4 1.5-1.1 2.3-2 1.5-1.7 2.9-4.4 4.1-7.7 1-2.8 1.8-6 2.5-9.5-3.6-.9-7.5-1.4-11.5-1.4-3.8 0-7.4.4-10.8 1.2.3.7.4 1.4.5 2.1zM21.6 64.3c-1.2-1.6-2.3-3.2-3.3-5-1.3.9-2.5 1.8-3.6 2.8 4.5 5.1 10.4 9 17.2 11-.3-.1-.6-.3-.9-.4-3.5-2.1-6.7-4.9-9.4-8.4zM50.6 69.8c-.7 1.2-1.5 2.2-2.3 3.1 1.7-.5 3.4-1.2 5.1-2.1 3.3-1.8 6.3-4.4 8.8-7.7 1.1-1.4 2.1-2.9 3-4.5-2.8-1.7-5.9-3.1-9.3-4.2-.1.6-.2 1.2-.3 1.7-1.3 5.5-2.9 10.2-5 13.7zM16.8 13.8c.5.4 1.1.8 1.6 1.2C21.6 9.3 25.9 4.8 31 2c.3-.2.6-.3.9-.4-6.6 2-12.4 5.8-16.9 10.8.6.4 1.2.9 1.8 1.4zM13.6 60.7l1.8-1.5 2.1-1.5A46.9 46.9 0 0 1 13 38.3H5.4c.2 8.5 3.2 16.2 8.2 22.4zM54.4 2c3.6 2 6.8 4.8 9.4 8.3 1.1 1.5 2.2 3.1 3.1 4.8 1.3-.9 2.4-1.8 3.5-2.7-4.5-5-10.3-8.8-16.9-10.8.3.1.6.2.9.4zM29.6 54.2c-2.7.8-5.3 1.8-7.7 3-.6.3-1.2.6-1.8 1 3 5.6 7.1 10 11.9 12.6 1.6.9 3.3 1.6 5.1 2.1l-.5-.5c-1.7-2-3.2-4.9-4.5-8.3-1-2.9-1.9-6.3-2.5-9.9zM67.8 16.6c2.8 5.7 4.5 12.4 4.7 19.6H80a36.7 36.7 0 0 0-8.4-22.6c-.6.6-1.3 1.1-2 1.6-.6.5-1.2 1-1.8 1.4zM71.5 61.1c5.1-6.2 8.3-14.1 8.5-22.7h-7.6c-.1 7.3-1.8 14-4.7 19.7 1.4.9 2.6 1.9 3.8 3zM13 36.3c.1-7.2 1.8-13.9 4.7-19.6-1.4-.9-2.7-1.9-3.9-3-5.1 6.2-8.2 14-8.4 22.6H13zM63.6 55.6c.8.4 1.6.9 2.3 1.3 2.6-5.4 4.2-11.8 4.4-18.6h-13c0 5.1-.5 9.9-1.2 14.3 2.7.8 5.2 1.8 7.5 3zM54.4 72.6c-.3.2-.6.3-.9.4 6.5-2 12.3-5.7 16.8-10.6l-2.1-1.8-1.3-1c-3.2 5.7-7.5 10.2-12.5 13zM48.3 1.7c.1.2.3.3.4.5 1.7 2 3.2 4.9 4.5 8.3 1 2.8 1.9 6.1 2.5 9.7 2.6-.8 5.1-1.8 7.4-2.9.7-.4 1.4-.7 2-1.1-3-5.5-7.1-9.8-11.8-12.4-1.5-.9-3.2-1.6-5-2.1zM57.3 36.3h13.1a43.8 43.8 0 0 0-4.3-18.5c-3 1.8-6.3 3.2-9.9 4.3.6 4.3 1 9.1 1.1 14.2z"/></svg>
+                    </a>
                 </div>
+                <h3 className={s.projectTitle}>{props.title}</h3>
+                <p className={s.projectTechnology}>{props.technology}</p>
             </div>
         </li>
     )
