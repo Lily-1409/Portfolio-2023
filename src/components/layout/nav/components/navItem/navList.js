@@ -25,7 +25,7 @@ const navList = [
     },
     {
         id: "05",
-        link: "Resume.pdf",
+        link: "assets/Resume.pdf",
         title: "Резюме",
         target: "_blank",
     }

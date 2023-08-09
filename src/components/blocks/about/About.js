@@ -15,7 +15,7 @@ function About () {
                     <p className={s.aboutDescription}>Мой путь в качестве it-специалиста начался в 2021 году, у меня мало опыта, но я стремлюсь учиться и решать поставленные передо мной задачи!</p>
                     <p className={s.aboutDescription}>Здесь можно посмотреть результаты моей работы: <a className={s.aboutLink} href="https://github.com/Lily-1409">https://github.com/Lily-1409</a>.</p>
                     <p className={s.aboutDescription}>В данный момент я продолжаю своё обучение и сконцентрирована на JavaScript и ES6.</p>
-                    <a className={s.aboutResume} href="Resume.pdf" target="_blank" rel="noreferrer">Мое резюме</a>
+                    <a className={s.aboutResume} href="assets/Resume.pdf" target="_blank" rel="noreferrer">Мое резюме</a>
                 </div>
             </div>
        </div>
