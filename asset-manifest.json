@@ -1,20 +1,25 @@
 {
   "files": {
     "main.css": "/Portfolio-2023/static/css/main.24643f18.css",
-    "main.js": "/Portfolio-2023/static/js/main.fb4e6d3f.js",
-    "static/media/Cat-energy.png": "/Portfolio-2023/static/media/Cat-energy.a61060122308b0c85616.png",
-    "static/media/Device.png": "/Portfolio-2023/static/media/Device.75fd20271f8f8e599ea5.png",
-    "static/media/Cryptostar.png": "/Portfolio-2023/static/media/Cryptostar.5b422e3861519dd62c80.png",
-    "static/media/desktopImage.png": "/Portfolio-2023/static/media/desktopImage.60ad3721e989b96a6558.png",
+    "main.js": "/Portfolio-2023/static/js/main.0e44b212.js",
+    "static/media/desktopImage.png": "/Portfolio-2023/static/media/desktopImage.a68c31aeb2a4409e1140.png",
+    "static/media/Keksobooking.jpg": "/Portfolio-2023/static/media/Keksobooking.cf0de6358fdc7f652735.jpg",
     "static/media/Manrope-VariableFont_wght.ttf": "/Portfolio-2023/static/media/Manrope-VariableFont_wght.737458ec4aa8c65eb03f.ttf",
-    "static/media/frontend-developer.png": "/Portfolio-2023/static/media/frontend-developer.5909552e57e7596acfe4.png",
+    "static/media/Antarctica.jpg": "/Portfolio-2023/static/media/Antarctica.1485bc551076db975d17.jpg",
+    "static/media/Device.jpg": "/Portfolio-2023/static/media/Device.85cf4610632ebf983df1.jpg",
+    "static/media/SmartDevice.jpg": "/Portfolio-2023/static/media/SmartDevice.073ed0133304eb45dcfa.jpg",
+    "static/media/Cat-energy.jpg": "/Portfolio-2023/static/media/Cat-energy.a23b096ac80d29b97aad.jpg",
     "static/media/Manrope-Regular.ttf": "/Portfolio-2023/static/media/Manrope-Regular.cff318e1af08cf483836.ttf",
+    "static/media/Cryptostar.jpg": "/Portfolio-2023/static/media/Cryptostar.4380df49419752588fb9.jpg",
+    "static/media/Fitness.jpg": "/Portfolio-2023/static/media/Fitness.bd00f5309e1c2a70e160.jpg",
+    "static/media/frontend-developer.png": "/Portfolio-2023/static/media/frontend-developer.e2f9f1e06185f05065ba.png",
+    "static/media/Drink2go.jpg": "/Portfolio-2023/static/media/Drink2go.d14cdefa7c24403ee1af.jpg",
     "index.html": "/Portfolio-2023/index.html",
     "main.24643f18.css.map": "/Portfolio-2023/static/css/main.24643f18.css.map",
-    "main.fb4e6d3f.js.map": "/Portfolio-2023/static/js/main.fb4e6d3f.js.map"
+    "main.0e44b212.js.map": "/Portfolio-2023/static/js/main.0e44b212.js.map"
   },
   "entrypoints": [
     "static/css/main.24643f18.css",
-    "static/js/main.fb4e6d3f.js"
+    "static/js/main.0e44b212.js"
   ]
 }
