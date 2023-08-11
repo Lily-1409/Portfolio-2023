@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-2023/static/css/main.24643f18.css",
-    "main.js": "/Portfolio-2023/static/js/main.ae649459.js",
+    "main.css": "/Portfolio-2023/static/css/main.645ffb6f.css",
+    "main.js": "/Portfolio-2023/static/js/main.5a51cbce.js",
     "static/media/desktopImage.png": "/Portfolio-2023/static/media/desktopImage.a68c31aeb2a4409e1140.png",
     "static/media/Keksobooking.jpg": "/Portfolio-2023/static/media/Keksobooking.cf0de6358fdc7f652735.jpg",
     "static/media/Manrope-VariableFont_wght.ttf": "/Portfolio-2023/static/media/Manrope-VariableFont_wght.737458ec4aa8c65eb03f.ttf",
@@ -15,11 +15,11 @@
     "static/media/frontend-developer.png": "/Portfolio-2023/static/media/frontend-developer.e2f9f1e06185f05065ba.png",
     "static/media/Drink2go.jpg": "/Portfolio-2023/static/media/Drink2go.d14cdefa7c24403ee1af.jpg",
     "index.html": "/Portfolio-2023/index.html",
-    "main.24643f18.css.map": "/Portfolio-2023/static/css/main.24643f18.css.map",
-    "main.ae649459.js.map": "/Portfolio-2023/static/js/main.ae649459.js.map"
+    "main.645ffb6f.css.map": "/Portfolio-2023/static/css/main.645ffb6f.css.map",
+    "main.5a51cbce.js.map": "/Portfolio-2023/static/js/main.5a51cbce.js.map"
   },
   "entrypoints": [
-    "static/css/main.24643f18.css",
-    "static/js/main.ae649459.js"
+    "static/css/main.645ffb6f.css",
+    "static/js/main.5a51cbce.js"
   ]
 }
