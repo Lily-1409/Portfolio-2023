@@ -7,8 +7,8 @@
     margin: 0 auto;
 
     width: 100%;
-    max-width: 1300px;
-    padding: 50px 40px;
+    /* max-width: 1300px; */
+    padding: 50px 0px 0px 0px;
 }
 
 .contactsTitle {
@@ -43,16 +43,23 @@
     left: calc(50% - 30px);
 }
 
-.contactsInfo {
-    margin: 0 auto;
-    padding: 25px;
-    list-style-type: none;
-
-    width: 300px;
-
+.contactsInfoWrapper {
     background-color: var(--color-blue-charcoal);
     border-top: 5px solid var(--color-turquoise-blue);
-    border-bottom: 5px solid var(--color-turquoise-blue);
+    padding: 35px 25px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactsInfo {
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--color-blue-charcoal);
 }
 
 .contactsInfoItem {
@@ -96,7 +103,7 @@
     }
 
     .contactsInfo {
-        width: 100%;
+        margin: 0;
     }
 
     .contactsTitle {
