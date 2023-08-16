@@ -42,7 +42,6 @@
 }
 
 .introConnect {
-    margin: 10px;
     padding: 8px 28px;
 
     display: inline-block;
@@ -125,7 +124,7 @@
 
 @media (max-width: 767px) {
     .introContent {
-        padding: 80px 40px 60px;
+        padding: 110px 40px 40px;
         min-height: auto;
     }
 

@@ -1,12 +1,14 @@
 import s from "./style.module.css";
 
-function NavItem (props) {
+function NavItem ({ title, link, target, onLinkClick}) {
     function handlerClickScroll (event) {
-        if(props.title !== "Резюме") {
+        onLinkClick()
+
+        if(title !== "Резюме") {
             event.preventDefault();
         }
 
-        const element = document.getElementById(props.link);
+        const element = document.getElementById(link);
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
         }
@@ -14,7 +16,7 @@ function NavItem (props) {
 
     return (
         <li className={s.navItem}>
-            <a onClick={handlerClickScroll} className={s.navLink} href={props.link} target={props.target}>{props.title}</a>
+            <a onClick={handlerClickScroll} className={s.navLink} href={link} target={target}>{title}</a>
         </li>
     )
 }

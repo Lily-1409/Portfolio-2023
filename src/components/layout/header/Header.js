@@ -2,6 +2,7 @@ import s from './style.module.css';
 import Logotype from './../../common/Logotype';
 import Nav from './../nav/Nav';
 import { useState } from 'react';
+import classNames from 'classnames';
 
 function Header () {
     const [isOpened, setIsOpened] = useState(false);
@@ -10,14 +11,20 @@ function Header () {
         setIsOpened(!isOpened)
     }
 
+    const handleLinkClick = () => {
+        setIsOpened(false)
+    }
+
+    const handleOutsideClick = () => {
+        setIsOpened(false)
+    }
+
     return (
         <div className={s.headerContent}>
             <Logotype />
-            <Nav isOpened={isOpened}/>
-            <button className={s.headerButton} onClick={updateNav}>
-                <svg className={s.headerButtonIcon} xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 20">
-                    <path fill="currentColor" fillRule="evenodd" d="M18 5a1 1 0 1 0 0-2H2a1 1 0 0 0 0 2h16zm0 4a1 1 0 1 0 0-2H2a1 1 0 1 0 0 2h16zm1 3a1 1 0 0 1-1 1H2a1 1 0 1 1 0-2h16a1 1 0 0 1 1 1zm-1 5a1 1 0 1 0 0-2H2a1 1 0 1 0 0 2h16z"/>
-                </svg>
+            <Nav isOpened={isOpened} onLinkClick={handleLinkClick} onOutsideClick={handleOutsideClick}/>
+            <button className={classNames(s.headerButton, isOpened === true && s.active)} onClick={updateNav}>
+                <span></span>
             </button>
         </div>
     )
