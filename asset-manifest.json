@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio-2023/static/css/main.9100392d.css",
+    "main.css": "/Portfolio-2023/static/css/main.d8862350.css",
     "main.js": "/Portfolio-2023/static/js/main.ad4559ba.js",
     "static/media/desktopImage.png": "/Portfolio-2023/static/media/desktopImage.a68c31aeb2a4409e1140.png",
     "static/media/Keksobooking.jpg": "/Portfolio-2023/static/media/Keksobooking.cf0de6358fdc7f652735.jpg",
@@ -15,11 +15,11 @@
     "static/media/frontend-developer.png": "/Portfolio-2023/static/media/frontend-developer.e2f9f1e06185f05065ba.png",
     "static/media/Drink2go.jpg": "/Portfolio-2023/static/media/Drink2go.d14cdefa7c24403ee1af.jpg",
     "index.html": "/Portfolio-2023/index.html",
-    "main.9100392d.css.map": "/Portfolio-2023/static/css/main.9100392d.css.map",
+    "main.d8862350.css.map": "/Portfolio-2023/static/css/main.d8862350.css.map",
     "main.ad4559ba.js.map": "/Portfolio-2023/static/js/main.ad4559ba.js.map"
   },
   "entrypoints": [
-    "static/css/main.9100392d.css",
+    "static/css/main.d8862350.css",
     "static/js/main.ad4559ba.js"
   ]
 }
