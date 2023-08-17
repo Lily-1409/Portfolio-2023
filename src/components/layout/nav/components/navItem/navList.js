@@ -25,6 +25,12 @@ const navList = [
     },
     {
         id: "05",
+        link: "contacts",
+        title: "Контакты",
+        // target: "_blank",
+    },
+    {
+        id: "06",
         link: "Resume.pdf",
         title: "Резюме",
         target: "_blank",

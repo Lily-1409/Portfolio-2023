@@ -1,6 +1,7 @@
 .projectsWrapper {
     border-top: 1px solid #fff;
     background-color: var(--white);
+    scroll-margin-top: var(--header-height);
 }
 
 .projectsContent {

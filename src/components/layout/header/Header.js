@@ -1,14 +1,23 @@
 import s from './style.module.css';
 import Logotype from './../../common/Logotype';
 import Nav from './../nav/Nav';
-import { useState } from 'react';
-import classNames from 'classnames';
+import { useEffect, useState } from 'react';
+import ButtonMenu from 'components/common/buttonMenu/ButtonMenu';
 
 function Header () {
     const [isOpened, setIsOpened] = useState(false);
+
+    useEffect(()=> {
+        if(isOpened) {
+            document.body.style.overflow = 'hidden';
+        }
+        else {
+            document.body.style.overflow = 'visible';
+        }
+    }, [isOpened])
     
     const updateNav = () => {
-        setIsOpened(!isOpened)
+        setIsOpened(!isOpened);
     }
 
     const handleLinkClick = () => {
@@ -22,10 +31,8 @@ function Header () {
     return (
         <div className={s.headerContent}>
             <Logotype />
-            <Nav isOpened={isOpened} onLinkClick={handleLinkClick} onOutsideClick={handleOutsideClick}/>
-            <button className={classNames(s.headerButton, isOpened === true && s.active)} onClick={updateNav}>
-                <span></span>
-            </button>
+            <Nav isOpened={isOpened} updateNav={updateNav} onLinkClick={handleLinkClick} onOutsideClick={handleOutsideClick}/>
+            <ButtonMenu updateNav={updateNav} isOpened={isOpened}/>
         </div>
     )
 }

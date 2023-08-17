@@ -1,0 +1,66 @@
+
+.headerButton {
+    display: none;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 18px;
+}
+
+.headerButton span {
+    height: 1px;
+    width: 80%;
+    transform: scale(1);
+    background-color: var(--white);
+}
+
+.headerButton::before,
+.headerButton::after {
+    content: '';
+    position: absolute;
+    left: 5%;
+    height: 1px;
+    width: 90%;
+    background-color: var(--white);
+    transition: all 0.3s ease 0s;
+}
+
+.headerButton::before {
+    top: 10%;
+}
+
+.headerButton::after {
+    top: 85%;
+}
+
+.headerButton.active span{
+    transform: scale(0);
+}
+
+.headerButton.active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+}
+
+.headerButton.active::after {
+    top: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+}
+
+@media (max-width: 767px) {
+    .headerButton {
+        display: flex;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border: 1px solid transparent;
+        z-index: 9999;
+        
+    }
+    
+    .headerButtonIcon {
+        color: var(--white);
+    }
+}

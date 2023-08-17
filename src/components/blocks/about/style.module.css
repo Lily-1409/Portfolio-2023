@@ -1,5 +1,6 @@
 .aboutWrapper {
     background-color: var(--white);
+    scroll-margin-top: var(--header-height);
 }
 
 .aboutContent {

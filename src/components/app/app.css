@@ -34,6 +34,9 @@
     /*Viewports*/
 	--mobile-width: 320px;
 	--tablet-width: 767px;
+
+    /*Scroll-margin-top*/
+    --header-height: 50px;
 }
 
 html,

@@ -12,7 +12,7 @@
     border-bottom: 1px solid var(--white);
     box-shadow: 0px 0px 4px var(--white);
 }
-
+/* 
 .headerButton {
     display: none;
     position: relative;
@@ -61,12 +61,14 @@
     top: 50%;
     transform: rotate(45deg) translate(0, 50%);
 }
+*/
 
 @media (max-width: 767px) {
     .headerContent {
         justify-content: space-between;
     }
-
+}
+/*
     .headerButton {
         display: flex;
         background-color: transparent;
@@ -80,4 +82,22 @@
     .headerButtonIcon {
         color: var(--white);
     }
-}
+} */
+/* const App = () => {
+    const headerRef = useRef();
+  
+    const scrollToHeader = () => {
+      headerRef.current.scrollIntoView();
+    };
+  
+    return (
+      <section className="App">
+        <header ref={headerRef}>Hello User</header>
+        <main>
+          <p>Awesome content</p>
+          <button onClick={scrollToHeader}>Scroll To Header</button>
+        </main>
+        <footer>Interesting Links</footer>
+      </section>
+    );
+  }; */

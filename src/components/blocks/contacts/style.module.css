@@ -1,6 +1,7 @@
 .contactsWrapper {
     border-top: 1px solid #fff;
     background-color: #F4F1F7;
+    scroll-margin-top: var(--header-height);
 }
 
 .contactsContent {
