@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/Portfolio-2023/static/css/main.7c646d0d.css",
-    "main.js": "/Portfolio-2023/static/js/main.404d4c8c.js",
+    "main.js": "/Portfolio-2023/static/js/main.a1f31f0b.js",
     "static/media/desktopImage.png": "/Portfolio-2023/static/media/desktopImage.a68c31aeb2a4409e1140.png",
+    "static/media/Resume.pdf": "/Portfolio-2023/static/media/Resume.6ead3dcead2be7bf7e91.pdf",
     "static/media/Keksobooking.jpg": "/Portfolio-2023/static/media/Keksobooking.cf0de6358fdc7f652735.jpg",
     "static/media/Manrope-VariableFont_wght.ttf": "/Portfolio-2023/static/media/Manrope-VariableFont_wght.737458ec4aa8c65eb03f.ttf",
     "static/media/Antarctica.jpg": "/Portfolio-2023/static/media/Antarctica.1485bc551076db975d17.jpg",
@@ -16,10 +17,10 @@
     "static/media/Drink2go.jpg": "/Portfolio-2023/static/media/Drink2go.d14cdefa7c24403ee1af.jpg",
     "index.html": "/Portfolio-2023/index.html",
     "main.7c646d0d.css.map": "/Portfolio-2023/static/css/main.7c646d0d.css.map",
-    "main.404d4c8c.js.map": "/Portfolio-2023/static/js/main.404d4c8c.js.map"
+    "main.a1f31f0b.js.map": "/Portfolio-2023/static/js/main.a1f31f0b.js.map"
   },
   "entrypoints": [
     "static/css/main.7c646d0d.css",
-    "static/js/main.404d4c8c.js"
+    "static/js/main.a1f31f0b.js"
   ]
 }
