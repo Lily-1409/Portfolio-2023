@@ -3,7 +3,6 @@ import s from './style.module.css';
 import Logotype from './../../common/Logotype';
 import NavItem from './components/navItem/NavItem';
 import navList from './components/navItem/navList.js';
-import ButtonMenu from 'components/common/buttonMenu/ButtonMenu';
 
 function Nav ({ isOpened, onLinkClick, onOutsideClick, updateNav }) {
     return (
@@ -11,7 +10,6 @@ function Nav ({ isOpened, onLinkClick, onOutsideClick, updateNav }) {
             <div className={classNames(s.navContent, isOpened === true && s.active)}>
                 <div className={s.buttonWrapper}>
                     <Logotype className={s.logotypeMobile}/>
-                    <ButtonMenu updateNav={updateNav}/>
                 </div>
                 <ul className={classNames(s.navList, isOpened === true && s.visible)} onClick={onOutsideClick}>
                     {navList.map((navItem) => {
