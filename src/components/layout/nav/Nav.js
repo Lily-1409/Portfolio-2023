@@ -14,7 +14,7 @@ function Nav ({ isOpened, onLinkClick, onOutsideClick, updateNav }) {
                 <ul className={classNames(s.navList, isOpened === true && s.visible)} onClick={onOutsideClick}>
                     {navList.map((navItem) => {
                         return (
-                            <NavItem key={navItem.id} title={navItem.title} link={navItem.link} target={navItem.target} onLinkClick={onLinkClick}/>
+                            <NavItem key={navItem.id} title={navItem.title} link={navItem.link} target={navItem.target} rel={navItem.rel} onLinkClick={onLinkClick}/>
                         )
                     })
                     }  

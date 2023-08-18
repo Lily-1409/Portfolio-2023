@@ -1,6 +1,6 @@
 import s from "./style.module.css";
 
-function NavItem ({ title, link, target, onLinkClick}) {
+function NavItem ({ title, link, target, rel, onLinkClick}) {
     function handlerClickScroll (event) {
         onLinkClick()
 
@@ -16,7 +16,7 @@ function NavItem ({ title, link, target, onLinkClick}) {
 
     return (
         <li className={s.navItem}>
-            <a onClick={handlerClickScroll} className={s.navLink} href={link} target={target}>{title}</a>
+            <a onClick={handlerClickScroll} className={s.navLink} href={link} target={target} rel={rel} >{title}</a>
         </li>
     )
 }

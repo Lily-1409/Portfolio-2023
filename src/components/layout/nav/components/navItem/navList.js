@@ -1,3 +1,5 @@
+import resume from 'Resume.pdf'
+
 const navList = [
     {
         id: "01",
@@ -31,9 +33,10 @@ const navList = [
     },
     {
         id: "06",
-        link: "Resume.pdf",
+        link: resume,
         title: "Резюме",
         target: "_blank",
+        rel: "noreferrer",
     }
 ]
 
